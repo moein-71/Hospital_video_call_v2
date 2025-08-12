@@ -12,20 +12,23 @@ Item {
             id: video_screen
             Layout.fillWidth: true
             Layout.fillHeight: true
-            color: "blue"
+            color: "transparent"
+            border.width: 2
         }
         Rectangle {
             id: pacs_and_his_table
             Layout.fillWidth: true
-            height: 50
-            color: "red"
+            Layout.preferredHeight: main_panel.height*0.07
+            color: "transparent"
+            border.width: 2
         }
         Rectangle {
             id: routing_conference_archiving_table
             Layout.fillWidth: true
-            height: 50
-            color: "pink"
+            Layout.preferredHeight: main_panel.height*0.07
+            color: "transparent"
+            border.width: 2
         }
-        Item { Layout.preferredHeight: 50 }
+        Item { Layout.preferredHeight: main_panel.height*0.14 }
     }
 }

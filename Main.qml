@@ -25,7 +25,7 @@ Window {
         anchors.margins: 5
 
         LeftPanel {
-            Layout.preferredWidth: 150
+            Layout.preferredWidth: parent.width*0.215
             Layout.fillHeight: true
         }
         MainPanel {
@@ -33,7 +33,7 @@ Window {
             Layout.fillHeight: true
         }
         RightPanel {
-            Layout.preferredWidth: 150
+            Layout.preferredWidth: parent.width*0.215
             Layout.fillHeight: true
         }
     }

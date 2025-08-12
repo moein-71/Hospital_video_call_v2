@@ -12,50 +12,57 @@ Item {
         Rectangle {
             id: company
             Layout.fillWidth: true
-            Layout.preferredHeight: 50
-            color: "gray"
+            Layout.preferredHeight: right_panel.height*0.07
+            color: "transparent"
+            border.width: 2
         }
         Rectangle {
             id: clock
             Layout.fillWidth: true
-            Layout.preferredHeight: 50
-            color: "blue"
+            Layout.preferredHeight: right_panel.height*0.07
+            color: "transparent"
+            border.width: 2
         }
         Rectangle {
             id: date_icon
             Layout.fillWidth: true
-            Layout.preferredHeight: 50
-            color: "red"
+            Layout.preferredHeight: right_panel.height*0.07
+            color: "transparent"
+            border.width: 2
         }
         Rectangle {
             id: negatoscope
             Layout.fillWidth: true
-            Layout.preferredHeight: 50
-            color: "pink"
+            Layout.preferredHeight: right_panel.height*0.07
+            color: "transparent"
+            border.width: 2
         }
         Rectangle {
             id: notes_result
             Layout.fillWidth: true
-            Layout.preferredHeight: 50
-            color: "green"
+            Layout.preferredHeight: right_panel.height*0.07
+            color: "transparent"
+            border.width: 2
         }
         Rectangle {
             id: power
             Layout.fillWidth: true
-            Layout.preferredHeight: 50
-            color: "purple"
+            Layout.preferredHeight: right_panel.height*0.07
+            color: "transparent"
+            border.width: 2
         }
         Item { Layout.fillHeight: true }
         RowLayout {
             Item { Layout.fillWidth: true }
             Rectangle {
                 id: back_itm
-                Layout.preferredWidth: 50
-                Layout.preferredHeight: 50
-                color: "black"
+                Layout.preferredWidth: 40
+                Layout.preferredHeight: 40
+                color: "transparent"
+                border.width: 2
             }
             Item { Layout.fillWidth: true }
         }
-        Item { Layout.preferredHeight: 50 }
+        Item { Layout.preferredHeight: right_panel.height*0.14 }
     }
 }
