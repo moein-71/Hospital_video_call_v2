@@ -37,6 +37,7 @@ qt_add_qml_module(appProject_Hospital_2
         Asset/Routing.png
         Asset/Start.png
         Asset/L_Reset.png
+        Asset/R_BoubarsLOGO.png
         icons.qrc
 )
 
