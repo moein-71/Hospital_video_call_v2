@@ -29,6 +29,12 @@ Item {
             Layout.preferredHeight: left_panel.height*0.07
             color: "transparent"
             border.width: 2
+
+            Image {
+                id: end_surgery_image
+                // source: "qrc:/EndSurgury.png"
+                source: "qrc:/Asset/EndSurgury.png"
+            }
         }
         Item { Layout.fillHeight: true }
         RowLayout {

@@ -15,6 +15,11 @@ Item {
             Layout.preferredHeight: right_panel.height*0.07
             color: "transparent"
             border.width: 2
+
+            // Image {
+            //     id: company_image
+            //     source: "qrc:/asset/"
+            // }
         }
         Rectangle {
             id: clock

@@ -20,6 +20,17 @@ Window {
 
     title: qsTr("Hospital_project_2")
 
+    Rectangle {
+        id: background
+        anchors.fill: parent
+
+        gradient: Gradient {
+            GradientStop { position: 0.0; color: "#2E5C5E" }
+            GradientStop { position: 1.0; color: "#0A2020" }
+        }
+    }
+
+
     RowLayout {
         anchors.fill: parent
         anchors.margins: 5

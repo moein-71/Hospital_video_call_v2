@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Main.qml</file>
+        <file>RightPanel.qml</file>
+        <file>MainPanel.qml</file>
+        <file>LeftPanel.qml</file>
+        <file>Asset/ClockWithoutNumbers.png</file>
+        <file>Asset/Archiving.png</file>
+        <file>Asset/Back.png</file>
+        <file>Asset/Conference.png</file>
+        <file>Asset/DateWithoutNumbers.png</file>
+        <file>Asset/EndSurgury.png</file>
+        <file>Asset/HIS.png</file>
+        <file>Asset/Negatoscope.png</file>
+        <file>Asset/Next.png</file>
+        <file>Asset/Notes Result.png</file>
+        <file>Asset/PACS.png</file>
+        <file>Asset/Pause.png</file>
+        <file>Asset/Power.png</file>
+        <file>Asset/Routing.png</file>
+        <file>Asset/Start.png</file>
+    </qresource>
+</RCC>
