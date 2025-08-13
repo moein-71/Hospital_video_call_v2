@@ -32,8 +32,9 @@ Item {
 
             Image {
                 id: end_surgery_image
-                // source: "qrc:/EndSurgury.png"
-                source: "qrc:/Asset/EndSurgury.png"
+                // source: "qrc:/EndSurgury.png" // Cannot open
+                source: "qrc:/Asset/EndSurgury.png" // Cannot open
+                fillMode: Image.PreserveAspectFit
             }
         }
         Item { Layout.fillHeight: true }
