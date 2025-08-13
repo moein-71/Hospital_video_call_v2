@@ -29,7 +29,7 @@ Item {
 
                 Button {
                     id: pacs_button
-                    Layout.preferredWidth:  pacs_and_his_table.width * .5
+                    Layout.preferredWidth:  pacs_and_his_table.width * .45
                     Layout.preferredHeight: pacs_and_his_table.height
                     onClicked: console.log("pacs clicked")
 
