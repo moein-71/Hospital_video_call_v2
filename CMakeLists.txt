@@ -20,9 +20,25 @@ qt_add_qml_module(appProject_Hospital_2
         MainPanel.qml
         LeftPanel.qml
         RightPanel.qml
+        Asset/EndSurgury.png
+        Asset/Archiving.png
+        Asset/Back.png
+        # Asset/ClockWithoutNumbers.png
+        # Asset/Conference.png
+        # Asset/DateWithoutNumbers.png
+        # Asset/HIS.png
+        # Asset/Negatoscope.png
+        Asset/Next.png
+        # Asset/Notes Result.png
+        # Asset/PACS.png
+        Asset/Pause.png
+        # Asset/Power.png
+        # Asset/Routing.png
+        Asset/Start.png
+        Asset/L_Reset.png
 
     RESOURCES
-    icons.qrc
+        icons.qrc
 
 )
 
