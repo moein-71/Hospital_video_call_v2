@@ -81,7 +81,7 @@ Item {
                 id: end_surgery_button
                 width: end_surgery.width * .55
                 height: end_surgery.height
-                onClicked: console.log("end su clicked!")
+                onClicked: generatorhandler.stopFramGenerating()
                 anchors.centerIn: parent
 
                 background: Image {

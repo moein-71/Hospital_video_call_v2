@@ -14,7 +14,21 @@ Item {
             Layout.fillWidth: true
             Layout.fillHeight: true
             color: "transparent"
-            border.width: 2
+            // border.width: 2
+
+            Image {
+                id: now_fram
+                width: video_screen.width
+                height: video_screen.height
+                fillMode: Image.PreserveAspectFit
+                // source:
+            }
+            Connections {
+                target: imageProvider
+                function onImageChanged() {
+                    now_fram.source = "image://camera/live?" + Math.random()
+                }
+            }
         }
         Rectangle {
             id: pacs_and_his_table
@@ -67,7 +81,7 @@ Item {
                     id: routing_button
                     Layout.preferredWidth:  pacs_and_his_table.width * .3
                     Layout.preferredHeight: pacs_and_his_table.height
-                    onClicked: console.log("routing clicked")
+                    onClicked: generatorhandler.startFramGenerating()
 
                     background: Image {
                         source: "Asset/Routing.png"
