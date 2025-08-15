@@ -5,6 +5,9 @@ project(Project_Hospital_2 VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Quick)
+find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Core)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
@@ -39,6 +42,9 @@ qt_add_qml_module(appProject_Hospital_2
         Asset/L_Reset.png
         Asset/R_BoubarsLOGO.png
         icons.qrc
+        SOURCES cameraframgenerator.h cameraframgenerator.cpp
+        SOURCES generatorhandler.h generatorhandler.cpp
+        SOURCES imageprovider.h imageprovider.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -55,6 +61,7 @@ set_target_properties(appProject_Hospital_2 PROPERTIES
 target_link_libraries(appProject_Hospital_2
     PRIVATE Qt6::Quick
 )
+target_link_libraries(appProject_Hospital_2 PRIVATE Qt6::Core)
 
 include(GNUInstallDirs)
 install(TARGETS appProject_Hospital_2
@@ -62,3 +69,9 @@ install(TARGETS appProject_Hospital_2
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+
+find_package(OpenCV REQUIRED)
+target_include_directories(appProject_Hospital_2 PRIVATE ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(appProject_Hospital_2 PRIVATE ${OpenCV_LIBS})
+target_link_libraries(appProject_Hospital_2 PRIVATE Qt6::Core)
+target_link_libraries(appProject_Hospital_2 PRIVATE Qt6::Core)
