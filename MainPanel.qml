@@ -21,7 +21,7 @@ Item {
                 width: video_screen.width
                 height: video_screen.height
                 fillMode: Image.PreserveAspectFit
-                // source:
+                source: "Asset/main_screen.png"
             }
             Connections {
                 target: imageProvider
